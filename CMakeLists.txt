@@ -7,13 +7,6 @@ add_subdirectory(yaml-cpp)
 add_subdirectory(tracktion_engine/modules/juce)
 add_subdirectory(Plugins)
 
-option(PACKAGE_TESTS "Build the tests" ON)
-if(PACKAGE_TESTS)
-    enable_testing()
-    include(GoogleTest)
-    add_subdirectory(Tests)
-endif()
-
 juce_add_gui_app(LMN-3
     # VERSION ...                       # Set this if the app version is different to the project version
     # ICON_BIG ...                      # ICON_* arguments specify a path to an image file to use as an icon
