@@ -27,6 +27,6 @@ namespace internal_plugins {
 #include <functional>
 
 #include "DrumSamplerPlugin/DrumSamplerPlugin.h"
-#include ""
+#include "DexedSynthPlugin/DexedSynthPlugin.h"
 
 
