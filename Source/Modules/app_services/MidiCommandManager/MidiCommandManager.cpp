@@ -62,10 +62,10 @@ void MidiCommandManager::midiMessageReceived(const juce::MidiMessage &message,
         switch (message.getControllerNumber()) {
         case ENCODER_1:
             if (auto listener = dynamic_cast<Listener *>(focusedComponent)) {
-                if (message.getControllerValue() == 1)
+                if (message.getControllerValue() == 127)
                     listener->encoder1Increased();
 
-                if (message.getControllerValue() == 127)
+                if (message.getControllerValue() == 1)
                     listener->encoder1Decreased();
             }
 
@@ -73,10 +73,10 @@ void MidiCommandManager::midiMessageReceived(const juce::MidiMessage &message,
 
         case ENCODER_2:
             if (auto listener = dynamic_cast<Listener *>(focusedComponent)) {
-                if (message.getControllerValue() == 1)
+                if (message.getControllerValue() == 127)
                     listener->encoder2Increased();
 
-                if (message.getControllerValue() == 127)
+                if (message.getControllerValue() == 1)
                     listener->encoder2Decreased();
             }
 
@@ -84,10 +84,10 @@ void MidiCommandManager::midiMessageReceived(const juce::MidiMessage &message,
 
         case ENCODER_3:
             if (auto listener = dynamic_cast<Listener *>(focusedComponent)) {
-                if (message.getControllerValue() == 1)
+                if (message.getControllerValue() == 127)
                     listener->encoder3Increased();
 
-                if (message.getControllerValue() == 127)
+                if (message.getControllerValue() == 1)
                     listener->encoder3Decreased();
             }
 
@@ -95,10 +95,10 @@ void MidiCommandManager::midiMessageReceived(const juce::MidiMessage &message,
 
         case ENCODER_4:
             if (auto listener = dynamic_cast<Listener *>(focusedComponent)) {
-                if (message.getControllerValue() == 1)
+                if (message.getControllerValue() == 127)
                     listener->encoder4Increased();
 
-                if (message.getControllerValue() == 127)
+                if (message.getControllerValue() == 1)
                     listener->encoder4Decreased();
             }
 
