@@ -45,6 +45,9 @@ class GuiAppApplication : public juce::JUCEApplication {
         engine.getPluginManager()
             .createBuiltInType<internal_plugins::DrumSamplerPlugin>();
 
+        engine.getPluginManager()
+            .createBuiltInType<internal_plugins::DexedSynthPlugin>();
+
         auto userAppDataDirectory = juce::File::getSpecialLocation(
             juce::File::userApplicationDataDirectory);
         juce::File editFile =
