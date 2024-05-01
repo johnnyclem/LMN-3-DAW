@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-juce_add_plugin(ExampleSynthPlugin
+juce_add_plugin(DexedSynthPlugin
     # VERSION ...                               # Set this if the plugin version is different to the project version
     # ICON_BIG ...                              # ICON_* arguments specify a path to an image file to use as an icon for the Standalone
     # ICON_SMALL ...
@@ -11,16 +11,16 @@ juce_add_plugin(ExampleSynthPlugin
     EDITOR_WANTS_KEYBOARD_FOCUS FALSE           # Does the editor need keyboard focus?
     COPY_PLUGIN_AFTER_BUILD TRUE                # Should the plugin be installed to a default location after building?
     PLUGIN_MANUFACTURER_CODE APP1               # A four-character manufacturer id with at least one upper-case character
-    PLUGIN_CODE Dem0                            # A unique four-character plugin id with at least one upper-case character
+    PLUGIN_CODE Dex0                            # A unique four-character plugin id with at least one upper-case character
     FORMATS VST3                                # The formats to build. Other valid formats are: AAX Unity VST AU AUv3
     VST3_CATEGORIES Synth
-    PRODUCT_NAME "VST3 Synth Plugin")           # The name of the final executable, which can differ from the target name
+    PRODUCT_NAME "Dexed Plugin")           # The name of the final executable, which can differ from the target name
 
-target_sources(ExampleSynthPlugin PRIVATE
+target_sources(DexedSynthPlugin PRIVATE
     PluginEditor.cpp
     PluginProcessor.cpp)
 
-target_compile_definitions(ExampleSynthPlugin
+target_compile_definitions(DexedSynthPlugin
     PUBLIC
     # JUCE_WEB_BROWSER and JUCE_USE_CURL would be on by default, but you might not need them.
     JUCE_WEB_BROWSER=0  # If you remove this, add `NEEDS_WEB_BROWSER TRUE` to the `juce_add_plugin` call
@@ -42,6 +42,6 @@ target_compile_definitions(ExampleSynthPlugin
 # linked automatically. If we'd generated a binary data target above, we would need to link to it
 # here too. This is a standard CMake command.
 
-target_link_libraries(ExampleSynthPlugin PRIVATE
+target_link_libraries(DexedSynthPlugin PRIVATE
     # AudioPluginData           # If we'd created a binary data target, we'd link to it here
     juce::juce_audio_utils)
