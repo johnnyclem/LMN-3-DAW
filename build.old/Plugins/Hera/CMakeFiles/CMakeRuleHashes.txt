@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+0715cdefbe20ad28856ee5ff64073d13 juce_binarydata_HeraData/JuceLibraryCode/BinaryData1.cpp

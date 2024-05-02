@@ -1,0 +1,2 @@
+/usr/bin/llvm-ar qc libHeraData.a CMakeFiles/HeraData.dir/juce_binarydata_HeraData/JuceLibraryCode/BinaryData1.cpp.o CMakeFiles/HeraData.dir/juce_binarydata_HeraData/JuceLibraryCode/BinaryData2.cpp.o
+/usr/bin/llvm-ranlib libHeraData.a

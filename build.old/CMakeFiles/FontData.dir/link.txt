@@ -1,0 +1,2 @@
+/usr/bin/llvm-ar qc libFontData.a CMakeFiles/FontData.dir/juce_binarydata_FontData/JuceLibraryCode/BinaryData1.cpp.o CMakeFiles/FontData.dir/juce_binarydata_FontData/JuceLibraryCode/BinaryData2.cpp.o CMakeFiles/FontData.dir/juce_binarydata_FontData/JuceLibraryCode/BinaryData3.cpp.o
+/usr/bin/llvm-ranlib libFontData.a

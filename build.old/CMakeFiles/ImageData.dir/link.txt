@@ -1,0 +1,2 @@
+/usr/bin/llvm-ar qc libImageData.a CMakeFiles/ImageData.dir/juce_binarydata_ImageData/JuceLibraryCode/BinaryData1.cpp.o CMakeFiles/ImageData.dir/juce_binarydata_ImageData/JuceLibraryCode/BinaryData2.cpp.o
+/usr/bin/llvm-ranlib libImageData.a

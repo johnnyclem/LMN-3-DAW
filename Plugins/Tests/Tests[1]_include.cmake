@@ -1,0 +1,5 @@
+if(EXISTS "/home/clem/LMN3_fork/LMN-3-DAW/Plugins/Tests/Tests[1]_tests.cmake")
+  include("/home/clem/LMN3_fork/LMN-3-DAW/Plugins/Tests/Tests[1]_tests.cmake")
+else()
+  add_test(Tests_NOT_BUILT Tests_NOT_BUILT)
+endif()
