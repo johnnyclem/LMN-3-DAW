@@ -408,11 +408,17 @@ void MidiCommandManager::midiMessageReceived(const juce::MidiMessage &message,
             if (message.getControllerValue() == 127) {
                 isMinusDown = true;
                 listeners.call([](Listener &l) { l.minusButtonPressed(); });
+                if isControlDown = true {
+                    l.octaveChanged(message.getControllerValue() - 1);
+                }
             }
 
             if (message.getControllerValue() == 0) {
                 isMinusDown = false;
                 listeners.call([](Listener &l) { l.minusButtonReleased(); });
+                if isControlDown = true {
+                    l.octaveChanged(message.getControllerValue() + 1);
+                }
             }
 
             break;
