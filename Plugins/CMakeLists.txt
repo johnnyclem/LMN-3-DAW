@@ -1,3 +1,3 @@
 cmake_minimum_required(VERSION 3.16)
-add_subdirectory(ExampleFxPlugin)
-add_subdirectory(DexedSynthPlugin)
+add_subdirectory(dexed)
+add_subdirectory(Hera)

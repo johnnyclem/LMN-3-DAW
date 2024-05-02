@@ -4,7 +4,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(LMN-3 VERSION 0.1.1)
 
 add_subdirectory(yaml-cpp)
-add_subdirectory(tracktion_engine/modules/juce)
+add_subdirectory(Plugins/tracktion_engine/modules/juce)
 add_subdirectory(Plugins)
 
 option(PACKAGE_TESTS "Build the tests" ON)
